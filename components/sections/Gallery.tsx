@@ -4,12 +4,12 @@ import { gallery } from '@/lib/site';
 
 export function Gallery() {
   return (
-    <section className="border-y border-[var(--line)] bg-white/[0.03] py-[54px]" id="galeria">
+    <section className="border-y border-[var(--line)] bg-white/[0.03] py-[54px] scroll-mt-20" id="galeria">
       <Container>
         <div className="mb-[18px]">
           <h2 className="mb-2 text-[clamp(24px,3vw,32px)] font-black tracking-normal">Galeria</h2>
           <p className="m-0 leading-[1.7] text-[var(--muted)]">
-            Trabajos reales en Lo Barnechea y Santiago. Malla nylon transparente y garantia de 1 ano.
+            Trabajos reales en Santiago y la Region Metropolitana. Malla nylon transparente y garantia de 1 ano.
           </p>
         </div>
 

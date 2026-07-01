@@ -43,7 +43,7 @@ export function MobileNav() {
           </a>
         ))}
         <Button
-          href={whatsappUrl('Hola, quiero cotizar mallas de seguridad en Lo Barnechea.')}
+          href={whatsappUrl('Hola, quiero cotizar mallas de seguridad.')}
           target="_blank"
           rel="noopener noreferrer"
           variant="primary"

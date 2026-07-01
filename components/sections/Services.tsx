@@ -7,7 +7,7 @@ import { whatsappUrl } from '@/lib/whatsapp';
 
 export function Services() {
   return (
-    <section className="py-[54px]" id="servicios">
+    <section className="py-[54px] scroll-mt-20" id="servicios">
       <Container>
         <div className="mb-[18px]">
           <h2 className="mb-2 text-[clamp(24px,3vw,32px)] font-black tracking-normal">Servicios</h2>
@@ -42,7 +42,7 @@ export function Services() {
             <span className="text-[var(--muted)]">Cotizacion en terreno con el maestro.</span>
           </div>
           <Button
-            href={whatsappUrl('Hola, quiero agendar visita y medicion gratis en Lo Barnechea.')}
+            href={whatsappUrl('Hola, quiero agendar visita y medicion gratis en Santiago.')}
             target="_blank"
             rel="noopener noreferrer"
             variant="primary"

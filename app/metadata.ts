@@ -3,23 +3,23 @@ import { business } from '@/lib/site';
 
 export const siteMetadata: Metadata = {
   metadataBase: new URL(business.url),
-  title: 'Mallas de Seguridad en Lo Barnechea y Santiago | Instalacion Profesional',
+  title: 'Mallas de Seguridad en Santiago | Instalacion Profesional',
   description:
-    'Instalacion de mallas de seguridad para balcones y ventanas en Lo Barnechea y Santiago. Nylon transparente, visita y medicion gratis, garantia de 1 ano.',
+    'Instalacion de mallas de seguridad para balcones y ventanas en Santiago y la Region Metropolitana. Nylon transparente, visita y medicion gratis, garantia de 1 ano.',
   keywords: [
     'mallas de seguridad',
     'mallas para balcones',
     'mallas para ventanas',
     'instalacion de mallas',
     'mallas de seguridad santiago',
-    'Lo Barnechea'
+    'Region Metropolitana'
   ],
   alternates: {
     canonical: business.url
   },
   openGraph: {
-    title: 'Mallas de Seguridad en Lo Barnechea',
-    description: 'Instalacion profesional de mallas para balcones y ventanas en Lo Barnechea y Santiago.',
+    title: 'Mallas de Seguridad en Santiago',
+    description: 'Instalacion profesional de mallas para balcones y ventanas en Santiago y la Region Metropolitana.',
     url: business.url,
     siteName: business.name,
     locale: 'es_CL',
@@ -29,13 +29,13 @@ export const siteMetadata: Metadata = {
         url: business.ogImage,
         width: 1024,
         height: 680,
-        alt: 'Mallas de seguridad instaladas en balcon en Lo Barnechea'
+        alt: 'Mallas de seguridad instaladas en balcon en Santiago'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mallas de Seguridad Lo Barnechea',
+    title: 'Mallas de Seguridad Santiago',
     description: 'Instalacion profesional de mallas de seguridad para balcones y ventanas en Santiago.',
     images: [business.ogImage]
   },

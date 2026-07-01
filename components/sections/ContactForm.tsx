@@ -11,7 +11,7 @@ const inputClass =
 export function ContactForm() {
   const { register, handleSubmit } = useForm<QuoteFormValues>({
     defaultValues: {
-      comuna: 'Lo Barnechea'
+      comuna: 'Santiago'
     }
   });
 
@@ -33,7 +33,7 @@ export function ContactForm() {
 
       <label className="mt-2.5 block font-extrabold">
         Comuna
-        <input className={inputClass} type="text" placeholder="Lo Barnechea" required {...register('comuna')} />
+        <input className={inputClass} type="text" placeholder="Santiago" required {...register('comuna')} />
       </label>
 
       <label className="mt-2.5 block font-extrabold">
@@ -50,8 +50,8 @@ export function ContactForm() {
       </label>
 
       <label className="mt-2.5 block font-extrabold">
-        Medidas aproximadas
-        <input className={inputClass} type="text" placeholder="Opcional: 2,0m alto x 3,0m ancho" {...register('medidas')} />
+        Medidas aproximadas (opcional)
+        <input className={inputClass} type="text" placeholder="2,0m alto x 3,0m ancho" {...register('medidas')} />
       </label>
 
       <label className="mt-2.5 block font-extrabold">
@@ -73,8 +73,6 @@ export function ContactForm() {
       >
         Enviar por WhatsApp
       </Button>
-
-      <p className="mt-2.5 text-xs text-[var(--muted)]">Al enviar, se abrira WhatsApp con el mensaje armado.</p>
     </form>
   );
 }

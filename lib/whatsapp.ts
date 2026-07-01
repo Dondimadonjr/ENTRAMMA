@@ -22,6 +22,6 @@ export function quoteWhatsappUrl(values: QuoteFormValues) {
       `Lugar: ${values.lugar.trim()}\n` +
       `Medidas aprox: ${measures}` +
       details +
-      '\nPodemos coordinar visita y medicion gratis?'
+      '\nPodemos coordinar visita y medición gratis?'
   );
 }

@@ -1,9 +1,9 @@
 import { AppWindow, Home, ShieldCheck, Trees, TriangleAlert, Wrench } from 'lucide-react';
 
 export const business = {
-  name: 'Mallas de Seguridad Lo Barnechea',
+  name: 'Mallas de Seguridad',
   shortName: 'Mallas de Seguridad',
-  area: 'Lo Barnechea',
+  area: 'Santiago',
   phone: '+56 9 7208 6522',
   whatsapp: '56972086522',
   email: 'mallasdeseguridad@gmail.com',
@@ -31,18 +31,18 @@ export const services = [
 ];
 
 export const gallery = [
-  { src: '/img/imagen-1.jpg', alt: 'Malla de seguridad instalada en balcon en Lo Barnechea' },
-  { src: '/img/imagen-2.jpg', alt: 'Malla de seguridad instalada en ventana en Lo Barnechea' },
-  { src: '/img/imagen-3.jpg', alt: 'Malla de seguridad instalada en terraza en Lo Barnechea' },
-  { src: '/img/imagen-4.jpg', alt: 'Malla de seguridad instalada en balcon con vista panoramica en Lo Barnechea' },
-  { src: '/img/imagen-5.jpg', alt: 'Malla de seguridad instalada en ventana corrediza en Lo Barnechea' },
-  { src: '/img/imagen-6.jpg', alt: 'Malla de seguridad instalada en balcon con perfiles y tensores en Lo Barnechea' }
+  { src: '/img/imagen-1.jpg', alt: 'Malla de seguridad instalada en balcon en Santiago' },
+  { src: '/img/imagen-2.jpg', alt: 'Malla de seguridad instalada en ventana en Santiago' },
+  { src: '/img/imagen-3.jpg', alt: 'Malla de seguridad instalada en terraza en la Region Metropolitana' },
+  { src: '/img/imagen-4.jpg', alt: 'Malla de seguridad instalada en balcon con vista panoramica' },
+  { src: '/img/imagen-5.jpg', alt: 'Malla de seguridad instalada en ventana corrediza' },
+  { src: '/img/imagen-6.jpg', alt: 'Malla de seguridad instalada en balcon con perfiles y tensores en Santiago' }
 ];
 
 export const faqs = [
   { question: 'La malla de seguridad se nota?', answer: 'Usamos nylon transparente, se ve discreta y mantiene la luz.' },
   { question: 'La instalacion de mallas es segura?', answer: 'Si, trabajamos con arneses y equipo de seguridad para instalaciones en altura.' },
   { question: 'Instalan mallas para balcones y ventanas?', answer: 'Si, instalamos mallas para balcones, ventanas, terrazas, escaleras y mascotas.' },
-  { question: 'Atienden mallas de seguridad en Santiago?', answer: 'Si, atendemos Lo Barnechea y todo Santiago con visita y medicion gratis.' },
+  { question: 'Atienden mallas de seguridad en Santiago?', answer: 'Si, atendemos en todo Santiago con visita y medicion gratis.' },
   { question: 'Tiene garantia?', answer: 'Si: 1 ano de garantia sobre la instalacion.' }
 ];

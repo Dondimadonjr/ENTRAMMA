@@ -13,7 +13,9 @@ export default function HomePage() {
   return (
     <>
       <LocalBusinessJsonLd />
+      <div id="top" aria-hidden="true" />
       <Header />
+
       <main>
         <Hero />
         <Services />
@@ -22,6 +24,7 @@ export default function HomePage() {
         <Coverage />
         <Contact />
       </main>
+
       <Footer />
       <FloatingWhatsapp />
     </>

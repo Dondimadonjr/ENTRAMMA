@@ -8,10 +8,10 @@ export function LocalBusinessJsonLd() {
     url: business.url,
     telephone: business.phone,
     email: business.email,
-    areaServed: ['Lo Barnechea', 'Santiago'],
+    areaServed: ['Santiago', 'Region Metropolitana'],
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Lo Barnechea',
+      addressLocality: 'Santiago',
       addressRegion: 'Region Metropolitana',
       addressCountry: 'CL'
     },
@@ -19,7 +19,7 @@ export function LocalBusinessJsonLd() {
     priceRange: '$$',
     image: `${business.url}${business.ogImage}`,
     description:
-      'Instalacion profesional de mallas de seguridad para balcones, ventanas, terrazas y mascotas en Lo Barnechea y Santiago.',
+      'Instalacion profesional de mallas de seguridad para balcones, ventanas, terrazas y mascotas en Santiago y la Region Metropolitana.',
     makesOffer: [
       'mallas de seguridad',
       'mallas para balcones',

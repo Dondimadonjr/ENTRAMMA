@@ -71,6 +71,7 @@ export function Header() {
                 relative
                 h-[58px]
                 w-[58px]
+                
                 transition-all
                 duration-500
                 group-hover:scale-105

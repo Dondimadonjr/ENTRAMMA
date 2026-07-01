@@ -1,16 +1,61 @@
 import { Container } from '@/components/ui/Container';
 import { business } from '@/lib/site';
+import Image from 'next/image';
 
 export function Footer() {
   return (
-    <footer className="border-t border-[var(--line)] bg-black/[0.18] py-5 backdrop-blur-[10px] md:py-[22px]">
-      <Container className="flex flex-col justify-between gap-2 text-sm text-[var(--muted)] md:flex-row md:items-center md:gap-3 md:text-base">
-        <div>
-          <strong className="text-[var(--text)]">{business.name}</strong>
-          <br />
-          Nylon transparente • Garantia 1 ano • Todo Santiago
+    <footer className="border-t border-white/30 bg-black/20 py-5 backdrop-blur-xl">
+      <Container className="flex flex-col gap-4 text-[var(--muted)] md:flex-row md:items-center md:justify-between">
+
+        {/* Marca */}
+        <div className="flex items-center gap-3">
+
+          <div
+            className="
+              relative
+              h-[80px]
+              w-[80px]
+              shrink-0
+
+              transform-gpu
+              transition-transform
+              duration-300
+
+              hover:-translate-y-0.5
+
+            "
+          >
+            <Image
+              src="/img/logo.png"
+              alt="ENTRAMMA"
+              fill
+              className="object-contain"
+            />
+          </div>
+
+          <div className="leading-tight">
+            <div className="text-lg font-black tracking-tight text-white transition-transform
+              duration-300 hover:-translate-y-0.5">
+              ENTRAMMA
+            </div>
+
+            <div className="text-xs text-[var(--muted)] transition-transform duration-300 hover:-translate-y-0.5">
+              Mallas de seguridad · Instalación profesional
+            </div>
+          </div>
+
         </div>
-        <div className="text-[13px]">© {new Date().getFullYear()} • Atencion 9:00-18:00</div>
+
+        {/* Info */}
+        <div className="text-center text-sm md:text-left transition-transform duration-300 hover:-translate-y-0.5">
+          Nylon transparente • Garantía 1 año • Todo Santiago
+        </div>
+
+        {/* Copyright */}
+        <div className="text-xs text-[var(--muted)] md:text-right transition-transform duration-300 hover:-translate-y-0.5  ">
+          © {new Date().getFullYear()} · Atención 9:00–18:00
+        </div>
+
       </Container>
     </footer>
   );

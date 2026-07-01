@@ -11,7 +11,7 @@ const inputClass =
 export function ContactForm() {
   const { register, handleSubmit } = useForm<QuoteFormValues>({
     defaultValues: {
-      comuna: 'Santiago'
+      comuna: ''
     }
   });
 
@@ -38,15 +38,48 @@ export function ContactForm() {
 
       <label className="mt-2.5 block text-sm font-extrabold md:text-base">
         Donde instalar?
-        <select className={inputClass} required {...register('lugar')}>
-          <option value="">Selecciona...</option>
-          <option>Balcon</option>
-          <option>Ventana</option>
-          <option>Terraza / Patio</option>
-          <option>Escalera</option>
-          <option>Mascotas</option>
-          <option>Otro</option>
-        </select>
+
+        <div className="relative mt-2">
+          <select
+            className={`
+              ${inputClass}
+
+              appearance-none
+              cursor-pointer
+              pr-14
+
+              text-white
+              font-semibold
+
+              hover:border-blue-500/30
+              focus:border-blue-500
+            `}
+            required
+            {...register('lugar')}
+          >
+            <option value="">Selecciona...</option>
+            <option value="Balcon">Balcón</option>
+            <option value="Ventana">Ventana</option>
+            <option value="Terraza">Terraza / Patio</option>
+            <option value="Escalera">Escalera</option>
+            <option value="Mascotas">Mascotas</option>
+            <option value="Otro">Otro</option>
+          </select>
+
+          <div
+            className="
+              pointer-events-none
+              absolute
+              right-5
+              top-1/2
+              -translate-y-1/2
+              text-white/40
+              text-xs
+            "
+          >
+            ▼
+          </div>
+        </div>
       </label>
 
       <label className="mt-2.5 block text-sm font-extrabold md:text-base">

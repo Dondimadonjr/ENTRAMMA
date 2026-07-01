@@ -12,7 +12,7 @@ export function Header() {
   return (
     <>
       {/* TOP BAR */}
-      <div className="border-b border-white/10 bg-gradient-to-r from-[#08111d] via-[#091321] to-[#08111d] backdrop-blur-xl">
+      <div className="border-b border-white/30 bg-gradient-to-r from-[#08111d] via-[#091321] to-[#08111d] backdrop-blur-xl">
         <Container className="flex items-center justify-between gap-4 py-2.5 text-[13px] text-[var(--muted)]">
 
           <div className="flex items-center gap-2 transition hover:text-white">

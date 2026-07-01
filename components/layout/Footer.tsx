@@ -1,5 +1,4 @@
 import { Container } from '@/components/ui/Container';
-import { business } from '@/lib/site';
 import Image from 'next/image';
 
 export function Footer() {

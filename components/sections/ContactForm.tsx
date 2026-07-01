@@ -5,11 +5,14 @@ import { Button } from '@/components/ui/Button';
 import { analyticsAttrs, analyticsEvents } from '@/lib/analytics';
 import { quoteWhatsappUrl, type QuoteFormValues } from '@/lib/whatsapp';
 
+import * as Select from '@radix-ui/react-select';
+import { ChevronDown } from 'lucide-react';
+
 const inputClass =
   'mt-1.5 w-full rounded-[14px] border border-white/15 bg-black/[0.18] px-3 py-2.5 text-sm text-[var(--text)] outline-none transition duration-200 placeholder:text-white/45 focus:border-blue-300/60 focus:shadow-[0_0_0_4px_rgba(59,130,246,0.18)] md:py-3 md:text-base';
 
 export function ContactForm() {
-  const { register, handleSubmit } = useForm<QuoteFormValues>({
+  const { register, setValue, handleSubmit } = useForm<QuoteFormValues>({
     defaultValues: {
       comuna: ''
     }
@@ -39,47 +42,104 @@ export function ContactForm() {
       <label className="mt-2.5 block text-sm font-extrabold md:text-base">
         Donde instalar?
 
-        <div className="relative mt-2">
-          <select
-            className={`
-              ${inputClass}
+        <Select.Root
+          onValueChange={(value) =>
+            setValue('lugar', value)
+          }
+        >
 
-              appearance-none
-              cursor-pointer
-              pr-14
+          <Select.Trigger
+            className="
+              mt-2
+              flex
+              h-[64px]
+              w-full
+              items-center
+              justify-between
 
+              rounded-2xl
+              border
+              border-white/10
+
+              bg-[#08111d]/90
+              px-5
+
+              text-left
               text-white
               font-semibold
 
-              hover:border-blue-500/30
-              focus:border-blue-500
-            `}
-            required
-            {...register('lugar')}
-          >
-            <option value="">Selecciona...</option>
-            <option value="Balcon">Balcón</option>
-            <option value="Ventana">Ventana</option>
-            <option value="Terraza">Terraza / Patio</option>
-            <option value="Escalera">Escalera</option>
-            <option value="Mascotas">Mascotas</option>
-            <option value="Otro">Otro</option>
-          </select>
+              transition
 
-          <div
-            className="
-              pointer-events-none
-              absolute
-              right-5
-              top-1/2
-              -translate-y-1/2
-              text-white/40
-              text-xs
+              hover:border-blue-500/40
+              focus:ring-4
+              focus:ring-blue-500/15
             "
           >
-            ▼
-          </div>
-        </div>
+            <Select.Value placeholder="Selecciona..." />
+
+            <Select.Icon>
+              <ChevronDown size={18} />
+            </Select.Icon>
+          </Select.Trigger>
+
+          <Select.Portal>
+
+            <Select.Content
+              className="
+                overflow-hidden
+                rounded-2xl
+                border
+                border-white/10
+
+                bg-[#091321]
+                backdrop-blur-xl
+
+                shadow-2xl
+              "
+            >
+
+              <Select.Viewport className="p-2">
+
+                {[
+                  'Balcón',
+                  'Ventana',
+                  'Terraza / Patio',
+                  'Escalera',
+                  'Mascotas',
+                  'Otro',
+                ].map((item) => (
+
+                  <Select.Item
+                    key={item}
+                    value={item}
+                    className="
+                      cursor-pointer
+                      rounded-xl
+
+                      px-4
+                      py-3
+
+                      text-white
+
+                      outline-none
+
+                      hover:bg-white/5
+                    "
+                  >
+                    <Select.ItemText>
+                      {item}
+                    </Select.ItemText>
+                  </Select.Item>
+
+                ))}
+
+              </Select.Viewport>
+
+            </Select.Content>
+
+          </Select.Portal>
+
+        </Select.Root>
       </label>
 
       <label className="mt-2.5 block text-sm font-extrabold md:text-base">

@@ -7,7 +7,7 @@ export function Faq() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-2.5 md:space-y-3">
       {faqs.map((faq, index) => {
         const isOpen = open === index;
 
@@ -36,8 +36,12 @@ export function Faq() {
                 w-full
                 items-center
                 justify-between
-                px-6
-                py-5
+                px-4
+                py-3.5
+                text-sm
+                md:px-6
+                md:py-5
+                md:text-base
                 text-left
                 font-black
                 text-white
@@ -69,8 +73,8 @@ export function Faq() {
                 }
               `}
             >
-              <div className="border-t border-white/5 px-6 pb-5 pt-4">
-                <p className="leading-8 text-[var(--muted)]">
+              <div className="border-t border-white/5 px-4 pb-4 pt-3 md:px-6 md:pb-5 md:pt-4">
+                <p className="text-sm leading-6 text-[var(--muted)] md:text-base md:leading-8">
                   {faq.answer}
                 </p>
               </div>

@@ -12,7 +12,7 @@ export function Header() {
   return (
     <>
       {/* TOP BAR */}
-      <div className="border-b border-white/6 bg-gradient-to-r from-[#08111d] via-[#091321] to-[#08111d] backdrop-blur-xl">
+      <div className="border-b border-white/10 bg-gradient-to-r from-[#08111d] via-[#091321] to-[#08111d] backdrop-blur-xl">
         <Container className="flex items-center justify-between gap-4 py-2.5 text-[13px] text-[var(--muted)]">
 
           <div className="flex items-center gap-2 transition hover:text-white">
@@ -47,51 +47,68 @@ export function Header() {
           sticky
           top-0
           z-50
-          border-b
-          border-white/8
           bg-[#050913]/75
           backdrop-blur-2xl
           shadow-[0_20px_60px_rgba(0,0,0,.18)]
         "
       >
-        <Container className="flex items-center justify-between py-4">
+        <Container className="flex items-center justify-between py-3">
 
 
           <a
             href="#top"
             aria-label="Volver al inicio"
-            className="group flex items-center gap-4 transition hover:opacity-80"
+            className="
+              group
+              flex
+              items-center
+              gap-3
+              select-none
+            "
           >
-            <div className="text-[17px] font-black tracking-tight text-white">
+            {/* Marca */}
+            <div className="text-[28px] font-black tracking-[-0.04em] text-white">
               ENTRAMMA
             </div>
 
+            {/* Logo */}
             <div
               className="
                 relative
-                h-[58px]
-                w-[58px]
-                
-                transition-all
-                duration-500
-                group-hover:scale-105
-                group-hover:rotate-[4deg]
+                h-[54px]
+                w-[54px]
+                shrink-0
+
+                transform-gpu
+                transition-transform
+                duration-300
+                ease-out
+
+                md:group-hover:rotate-[5deg]
+                md:group-hover:scale-105
+
+                active:rotate-0
+                active:scale-100
               "
             >
               <Image
-              src="/img/favicon.png"
-                alt="Mallas de Seguridad"
+                src="/img/favicon.png"
+                alt="ENTRAMMA"
                 fill
                 priority
                 className="object-contain"
               />
             </div>
 
-            
+            {/* Descriptor */}
+            <div className="leading-tight">
+              <div className="text-[13px] font-medium text-white/90">
+                Mallas de seguridad
+              </div>
 
-            <div className="text-xs text-[var(--muted)]">
-              Mallas de seguridad 
-              Instalación profesional
+              <div className="text-[11px] text-[var(--muted)]">
+                Instalación profesional
+              </div>
             </div>
           </a>
 

@@ -14,28 +14,28 @@ const trustItems = [
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden py-16 lg:py-15">
+    <section className="relative overflow-hidden py-10 md:py-16 lg:py-15">
 
       {/* Glow fondo */}
-    <div className="absolute left-[10%] top-[10%] h-[400px] w-[400px] rounded-full bg-blue-600/10 blur-[120px]" />
-      <div className="absolute right-[5%] top-[35%] h-[280px] w-[280px] rounded-full bg-emerald-500/10 blur-[120px]" />
-      <Container className="relative grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
+      <div className="absolute left-[10%] top-[10%] h-[240px] w-[240px] rounded-full bg-blue-600/10 blur-[90px] md:h-[400px] md:w-[400px] md:blur-[120px]" />
+      <div className="absolute right-[5%] top-[35%] h-[180px] w-[180px] rounded-full bg-emerald-500/10 blur-[90px] md:h-[280px] md:w-[280px] md:blur-[120px]" />
+      <Container className="relative grid items-center gap-6 md:gap-10 lg:grid-cols-[1.15fr_0.85fr]">
 
         {/* IZQUIERDA */}
         <div className="animate-fade-up">
-          <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-[13px] text-blue-200">
+          <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-3 py-1.5 text-xs text-blue-200 md:px-4 md:py-2 md:text-[13px]">
             <ShieldCheck size={14} />
             Visita y medición gratuita
           </div>
 
-          <h1 className="mt-5 text-[clamp(40px,6vw,68px)] font-black leading-[0.95]">
+          <h1 className="mt-4 text-[clamp(34px,11vw,68px)] font-black leading-[0.95] md:mt-5">
             Protege tu hogar con
             <span className="mt-2 block bg-gradient-to-r from-blue-300 via-cyan-300 to-emerald-300 bg-clip-text text-transparent">
               mallas de seguridad
             </span>
           </h1>
 
-          <p className="mt-6 max-w-[650px] text-lg leading-8 text-[var(--muted)]">
+          <p className="mt-4 max-w-[650px] text-base leading-7 text-[var(--muted)] md:mt-6 md:text-lg md:leading-8">
             Instalación profesional para
             <strong className="text-white">
               {' '}balcones, ventanas y terrazas
@@ -44,7 +44,7 @@ export function Hero() {
           </p>
 
           {/* CTA */}
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-6 flex flex-wrap gap-3 md:mt-8 md:gap-4">
             <Button
               href={whatsappUrl(
                 'Hola, quiero cotizar instalación de mallas.'
@@ -75,7 +75,7 @@ export function Hero() {
           </div>
 
           {/* Badges */}
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-6 grid grid-cols-2 gap-2.5 md:mt-8 md:flex md:flex-wrap md:gap-3">
             {trustItems.map((item) => (
               <div
                 key={item}
@@ -85,9 +85,12 @@ export function Hero() {
                 border
                 border-white/8
                 bg-white/[0.03]
-                px-4
-                py-3
-                text-sm
+                px-3
+                py-2.5
+                text-[13px]
+                md:px-4
+                md:py-3
+                md:text-sm
                 text-[var(--muted)]
                 transition
                 duration-300
@@ -114,7 +117,8 @@ export function Hero() {
             className="
             relative
             overflow-hidden
-            p-8
+            p-5
+            md:p-8
             transition
             duration-500
             hover:-translate-y-1
@@ -126,13 +130,13 @@ export function Hero() {
               <div className="mb-3 inline-flex rounded-full bg-emerald-500/10 px-3 py-1 text-xs text-emerald-300">
                 Respuesta rápida
               </div>
-              <h3 className="text-2xl font-black">
+              <h3 className="text-xl font-black md:text-2xl">
                 Cotiza en menos de 1 minuto
               </h3>
-              <p className="mt-2 text-[var(--muted)]">
+              <p className="mt-1.5 text-sm text-[var(--muted)] md:mt-2 md:text-base">
                 Solo envíanos:
               </p>
-              <div className="mt-6 space-y-4">
+              <div className="mt-4 grid gap-2.5 md:mt-6 md:space-y-4">
 
                 {[
                   'Comuna o sector de Santiago',
@@ -150,7 +154,10 @@ export function Hero() {
                     border
                     border-white/6
                     bg-white/[0.03]
-                    p-4
+                    p-3
+                    text-sm
+                    md:p-4
+                    md:text-base
                   "
                   >
                     <Star
@@ -162,7 +169,7 @@ export function Hero() {
                 ))}
               </div>
               <Button
-                className="mt-8"
+                className="mt-5 md:mt-8"
                 href={whatsappUrl(
                   'Hola, quiero cotizar mallas de seguridad.'
                 )}
@@ -176,7 +183,7 @@ export function Hero() {
               >
                 Abrir WhatsApp
               </Button>
-              <p className="mt-4 text-center text-xs text-[var(--muted)]">
+              <p className="mt-3 text-center text-xs text-[var(--muted)] md:mt-4">
                 Horario atención · 09:00–18:00
               </p>
             </div>

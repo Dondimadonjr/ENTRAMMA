@@ -17,7 +17,7 @@ export function Header() {
 
           <div className="flex items-center gap-2 transition hover:text-white">
             <MapPin size={14} />
-            <span>Todo Santiago</span>
+            <span>Region Metropolitana y zonas cercanas</span>
           </div>
 
           <div className="hidden items-center gap-3 sm:flex">
@@ -103,7 +103,7 @@ export function Header() {
             {/* Descriptor */}
             <div className="leading-tight">
               <div className="text-[13px] font-medium text-white/90">
-                Mallas de seguridad
+                Seguridad en altura
               </div>
 
               <div className="text-[11px] text-[var(--muted)]">
@@ -160,7 +160,7 @@ export function Header() {
             <div className="ml-4">
               <Button
                 href={whatsappUrl(
-                  'Hola, quiero cotizar mallas de seguridad.'
+                  'Hola, quiero solicitar un presupuesto estimado y coordinar visita tecnica.'
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -170,7 +170,7 @@ export function Header() {
                   analyticsEvents.headerCta
                 )}
               >
-                Cotizar →
+                Presupuesto →
               </Button>
             </div>
 

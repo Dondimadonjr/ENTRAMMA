@@ -6,10 +6,10 @@ import { analyticsAttrs, analyticsEvents } from '@/lib/analytics';
 import { whatsappUrl } from '@/lib/whatsapp';
 
 const trustItems = [
-  'Garantía 1 año',
-  'Instalación profesional',
-  'Protección niños y mascotas',
-  'Cobertura Santiago',
+  'Garantia 1 ano',
+  'Instalacion profesional',
+  'Materiales certificados',
+  'Visita tecnica',
 ];
 
 export function Hero() {
@@ -25,29 +25,29 @@ export function Hero() {
         <div className="animate-fade-up">
           <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-3 py-1.5 text-xs text-blue-200 md:px-4 md:py-2 md:text-[13px]">
             <ShieldCheck size={14} />
-            Visita y medición gratuita
+            Visita tecnica y presupuesto estimado
           </div>
 
           <h1 className="mt-4 text-[clamp(34px,11vw,68px)] font-black leading-[0.95] md:mt-5">
-            Protege tu hogar con
+            Seguridad confiable para
             <span className="mt-2 block bg-gradient-to-r from-blue-300 via-cyan-300 to-emerald-300 bg-clip-text text-transparent">
-              mallas de seguridad
+              espacios en altura
             </span>
           </h1>
 
           <p className="mt-4 max-w-[650px] text-base leading-7 text-[var(--muted)] md:mt-6 md:text-lg md:leading-8">
-            Instalación profesional para
+            Equipo con experiencia en
             <strong className="text-white">
               {' '}balcones, ventanas y terrazas
             </strong>
-            {' '}con materiales resistentes, terminaciones limpias y atención rápida.
+            {' '}con respuesta rapida, materiales certificados, garantia y rectificacion en terreno antes de fabricar.
           </p>
 
           {/* CTA */}
           <div className="mt-6 flex flex-wrap gap-3 md:mt-8 md:gap-4">
             <Button
               href={whatsappUrl(
-                'Hola, quiero cotizar instalación de mallas.'
+                'Hola, quiero solicitar un presupuesto estimado y coordinar visita tecnica.'
               )}
               target="_blank"
               rel="noopener noreferrer"
@@ -70,7 +70,7 @@ export function Hero() {
                 analyticsEvents.heroContact
               )}
             >
-              Agendar visita
+              Coordinar visita
             </Button>
           </div>
 
@@ -128,21 +128,21 @@ export function Hero() {
           <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-blue-500/10 blur-[80px]" />
             <div className="relative">
               <div className="mb-3 inline-flex rounded-full bg-emerald-500/10 px-3 py-1 text-xs text-emerald-300">
-                Respuesta rápida
+                Respuesta rapida
               </div>
               <h3 className="text-xl font-black md:text-2xl">
-                Cotiza en menos de 1 minuto
+                Presupuesto simple, sin vueltas
               </h3>
               <p className="mt-1.5 text-sm text-[var(--muted)] md:mt-2 md:text-base">
-                Solo envíanos:
+                Para estimar mejor necesitamos:
               </p>
               <div className="mt-4 grid gap-2.5 md:mt-6 md:space-y-4">
 
                 {[
-                  'Comuna o sector de Santiago',
-                  'Donde instalar? balcon/ventana/terraza',
-                  'Medidas aproximadas (alto x ancho o m2)',
-                  'Si puedes, fotos del lugar',
+                  'Comuna, region y direccion referencial',
+                  'Tipo de espacio a intervenir',
+                  'Medidas aproximadas de ancho y alto',
+                  'Fotos para revisar condiciones del lugar',
                 ].map((item) => (
                   <div
                     key={item}
@@ -171,7 +171,7 @@ export function Hero() {
               <Button
                 className="mt-5 md:mt-8"
                 href={whatsappUrl(
-                  'Hola, quiero cotizar mallas de seguridad.'
+                  'Hola, quiero solicitar un presupuesto estimado.'
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -181,10 +181,10 @@ export function Hero() {
                   analyticsEvents.quickQuote
                 )}
               >
-                Abrir WhatsApp
+                Escribir por WhatsApp
               </Button>
               <p className="mt-3 text-center text-xs text-[var(--muted)] md:mt-4">
-                Horario atención · 09:00–18:00
+                Horario de atencion · 09:00-18:00
               </p>
             </div>
           </Card>

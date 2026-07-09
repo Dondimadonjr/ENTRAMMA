@@ -2,9 +2,9 @@ import { Card } from '@/components/ui/Card';
 import { Container } from '@/components/ui/Container';
 
 const items = [
-  { title: 'Santiago', description: 'Cobertura para comunas de la ciudad.' },
-  { title: 'Todo Santiago', description: 'Cobertura amplia para hogares y departamentos.' },
-  { title: 'Visita gratis', description: 'Medicion + cotizacion en terreno.' }
+  { title: 'Region Metropolitana', description: 'Coordinamos instalaciones en comunas urbanas y residenciales con visita tecnica.' },
+  { title: 'Zonas cercanas', description: 'Evaluamos proyectos en localidades proximas cuando el alcance de la instalacion lo requiere.' },
+  { title: 'Evaluacion en terreno', description: 'Rectificamos medidas, accesos y detalles constructivos antes de fabricar.' }
 ];
 
 export function Coverage() {
@@ -14,7 +14,8 @@ export function Coverage() {
         <div className="mb-4 md:mb-[18px]">
           <h2 className="mb-2 text-[clamp(24px,3vw,32px)] font-black tracking-normal">Cobertura</h2>
           <p className="m-0 text-sm leading-6 text-[var(--muted)] md:text-base md:leading-[1.7]">
-            Atencion en Santiago y comunas de la Region Metropolitana, con coordinacion segun disponibilidad.
+            Realizamos instalaciones en toda la Region Metropolitana y tambien desarrollamos proyectos en localidades
+            cercanas y zonas costeras segun evaluacion.
           </p>
         </div>
 

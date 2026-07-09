@@ -43,14 +43,14 @@ export function MobileNav() {
           </a>
         ))}
         <Button
-          href={whatsappUrl('Hola, quiero cotizar mallas de seguridad.')}
+          href={whatsappUrl('Hola, quiero solicitar un presupuesto estimado y coordinar visita tecnica.')}
           target="_blank"
           rel="noopener noreferrer"
           variant="primary"
           size="small"
           {...analyticsAttrs(analyticsEvents.headerCta)}
         >
-          Cotiza ahora
+          Solicitar presupuesto
         </Button>
       </nav>
     </div>

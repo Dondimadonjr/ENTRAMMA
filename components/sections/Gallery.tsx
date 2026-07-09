@@ -9,7 +9,7 @@ export function Gallery() {
         <div className="mb-4 md:mb-[18px]">
           <h2 className="mb-2 text-[clamp(24px,3vw,32px)] font-black tracking-normal">Galeria</h2>
           <p className="m-0 text-sm leading-6 text-[var(--muted)] md:text-base md:leading-[1.7]">
-            Trabajos reales en Santiago y la Region Metropolitana. Malla nylon transparente y garantia de 1 ano.
+            Trabajos reales con nylon transparente, tensado firme y terminaciones cuidadas para distintos espacios.
           </p>
         </div>
 

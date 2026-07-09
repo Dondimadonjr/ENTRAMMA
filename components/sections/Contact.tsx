@@ -23,15 +23,15 @@ export function Contact() {
           </span>
 
           <h2 className="mt-3 text-[clamp(26px,8vw,44px)] font-black leading-[1.05] md:mt-4">
-            Agenda tu visita y recibe una{' '}
+            Solicita una estimacion y coordinemos la{' '}
             <span className="bg-[linear-gradient(90deg,#93c5fd,#86efac)] bg-clip-text text-transparent">
-              cotización rápida
+              visita tecnica
             </span>
           </h2>
 
           <p className="mt-3 max-w-[62ch] text-sm leading-6 text-[var(--muted)] md:mt-4 md:text-base md:leading-[1.8]">
-            Cuéntanos dónde necesitas instalar y coordinamos una visita sin costo
-            para medir y entregarte una propuesta.
+            Cuentanos lo esencial para preparar un presupuesto referencial. Luego verificamos medidas y condiciones en
+            terreno antes de confirmar la propuesta final.
           </p>
         </div>
 
@@ -60,7 +60,7 @@ export function Contact() {
               </h3>
 
               <p className="mt-2 text-sm text-[var(--muted)]">
-                Respuesta rápida durante horario laboral.
+                Respuesta rapida durante horario laboral.
               </p>
 
               <div className="mt-5 space-y-3 md:mt-8 md:space-y-4">
@@ -127,7 +127,7 @@ export function Contact() {
 
                 <Button
                   href={whatsappUrl(
-                    'Hola, quiero agendar una visita para cotizar mallas de seguridad.'
+                    'Hola, quiero solicitar un presupuesto estimado y agendar una visita tecnica.'
                   )}
                   target="_blank"
                   rel="noopener noreferrer"

@@ -3,23 +3,23 @@ import { business } from '@/lib/site';
 
 export const siteMetadata: Metadata = {
   metadataBase: new URL(business.url),
-  title: 'Mallas de Seguridad en Santiago | Instalacion Profesional',
+  title: 'Entramma | Instalacion profesional de seguridad en altura',
   description:
-    'Instalacion de mallas de seguridad para balcones y ventanas en Santiago y la Region Metropolitana. Nylon transparente, visita y medicion gratis, garantia de 1 ano.',
+    'Instalacion profesional para balcones, ventanas, terrazas, escaleras y piscinas. Presupuesto estimado, visita tecnica, materiales certificados y garantia.',
   keywords: [
     'mallas de seguridad',
     'mallas para balcones',
     'mallas para ventanas',
     'instalacion de mallas',
-    'mallas de seguridad santiago',
+    'seguridad en altura',
     'Region Metropolitana'
   ],
   alternates: {
     canonical: business.url
   },
   openGraph: {
-    title: 'Mallas de Seguridad en Santiago',
-    description: 'Instalacion profesional de mallas para balcones y ventanas en Santiago y la Region Metropolitana.',
+    title: 'Entramma | Instalacion profesional de seguridad en altura',
+    description: 'Presupuesto estimado, visita tecnica y materiales certificados para balcones, ventanas, terrazas y otros espacios.',
     url: business.url,
     siteName: business.name,
     locale: 'es_CL',
@@ -29,14 +29,14 @@ export const siteMetadata: Metadata = {
         url: business.ogImage,
         width: 1024,
         height: 680,
-        alt: 'Mallas de seguridad instaladas en balcon en Santiago'
+        alt: 'Instalacion profesional en balcon con nylon transparente'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mallas de Seguridad Santiago',
-    description: 'Instalacion profesional de mallas de seguridad para balcones y ventanas en Santiago.',
+    title: 'Entramma | Seguridad en altura',
+    description: 'Instalacion profesional con visita tecnica, garantia y cobertura en la Region Metropolitana y zonas cercanas.',
     images: [business.ogImage]
   },
   robots: {

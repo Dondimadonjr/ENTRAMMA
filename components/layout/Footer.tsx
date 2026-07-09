@@ -39,7 +39,7 @@ export function Footer() {
             </div>
 
             <div className="text-xs text-[var(--muted)] transition-transform duration-300 hover:-translate-y-0.5">
-              Mallas de seguridad · Instalación profesional
+              Instalacion profesional · Materiales certificados
             </div>
           </div>
 
@@ -47,7 +47,7 @@ export function Footer() {
 
         {/* Info */}
         <div className="text-center text-sm md:text-left transition-transform duration-300 hover:-translate-y-0.5">
-          Nylon transparente • Garantía 1 año • Todo Santiago
+          Nylon transparente • Garantia 1 ano • Region Metropolitana y zonas cercanas
         </div>
 
         {/* Copyright */}

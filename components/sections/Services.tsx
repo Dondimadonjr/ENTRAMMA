@@ -2,7 +2,7 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { Container } from '@/components/ui/Container';
-import { services } from '@/lib/site';
+import { homeQuoteHighlight, materialInfo, services } from '@/lib/site';
 import { whatsappUrl } from '@/lib/whatsapp';
 
 export function Services() {
@@ -12,7 +12,7 @@ export function Services() {
         <div className="mb-4 md:mb-[18px]">
           <h2 className="mb-2 text-[clamp(24px,3vw,32px)] font-black tracking-normal">Servicios</h2>
           <p className="m-0 text-sm leading-6 text-[var(--muted)] md:text-base md:leading-[1.7]">
-            Soluciones para seguridad en altura con terminaciones prolijas y materiales resistentes.
+            Instalaciones a medida para reducir riesgos sin alterar la vista ni la estetica del espacio.
           </p>
         </div>
 
@@ -41,19 +41,30 @@ export function Services() {
           })}
         </div>
 
+        <Card className="mt-4 p-4 md:mt-[18px] md:p-5">
+          <h3 className="text-lg font-black">{materialInfo.title}</h3>
+          <ul className="mt-3 grid gap-2 text-sm leading-6 text-[var(--muted)] md:grid-cols-3 md:text-base md:leading-[1.7]">
+            {materialInfo.items.map((item) => (
+              <li key={item} className="rounded-2xl border border-white/10 bg-white/[0.04] p-3">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </Card>
+
         <div className="mt-4 flex flex-col items-start justify-between gap-3 rounded-[var(--radius2)] border border-blue-500/25 bg-blue-500/10 p-3.5 shadow-[0_18px_50px_rgba(0,0,0,0.18)] md:mt-[18px] md:flex-row md:items-center md:gap-3.5 md:p-4">
           <div>
-            <strong>Visita y medicion gratis</strong>
+            <strong>{homeQuoteHighlight.title}</strong>
             <br />
-            <span className="text-sm text-[var(--muted)] md:text-base">Cotizacion en terreno con el maestro.</span>
+            <span className="text-sm text-[var(--muted)] md:text-base">{homeQuoteHighlight.description}</span>
           </div>
           <Button
-            href={whatsappUrl('Hola, quiero agendar visita y medicion gratis en Santiago.')}
+            href={whatsappUrl('Hola, quiero agendar una visita gratuita a domicilio para solicitar un presupuesto.')}
             target="_blank"
             rel="noopener noreferrer"
             variant="primary"
           >
-            Agendar por WhatsApp <ArrowRight size={18} aria-hidden />
+            Coordinar por WhatsApp <ArrowRight size={18} aria-hidden />
           </Button>
         </div>
       </Container>

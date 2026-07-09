@@ -8,10 +8,10 @@ export function LocalBusinessJsonLd() {
     url: business.url,
     telephone: business.phone,
     email: business.email,
-    areaServed: ['Santiago', 'Region Metropolitana'],
+    areaServed: ['Region Metropolitana', 'Localidades cercanas', 'Zonas costeras segun evaluacion'],
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Santiago',
+      addressLocality: 'Region Metropolitana',
       addressRegion: 'Region Metropolitana',
       addressCountry: 'CL'
     },
@@ -19,7 +19,7 @@ export function LocalBusinessJsonLd() {
     priceRange: '$$',
     image: `${business.url}${business.ogImage}`,
     description:
-      'Instalacion profesional de mallas de seguridad para balcones, ventanas, terrazas y mascotas en Santiago y la Region Metropolitana.',
+      'Instalacion profesional para balcones, ventanas, terrazas, escaleras, piscinas y otros espacios, con visita tecnica y presupuesto estimado.',
     makesOffer: [
       'mallas de seguridad',
       'mallas para balcones',

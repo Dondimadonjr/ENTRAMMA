@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/30 bg-black/20 py-5 backdrop-blur-xl">
-      <Container className="flex flex-col gap-4 text-[var(--muted)] md:flex-row md:items-center md:justify-between">
+    <footer className="border-t border-white/30 bg-black/20 py-4 backdrop-blur-xl md:py-5">
+      <Container className="flex flex-col gap-3 text-[var(--muted)] md:flex-row md:items-center md:justify-between md:gap-4">
 
         {/* Marca */}
         <div className="flex items-center gap-3">
@@ -12,9 +12,11 @@ export function Footer() {
           <div
             className="
               relative
-              h-[80px]
-              w-[80px]
+              h-12
+              w-12
               shrink-0
+              md:h-[80px]
+              md:w-[80px]
 
               transform-gpu
               transition-transform
@@ -33,7 +35,7 @@ export function Footer() {
           </div>
 
           <div className="leading-tight">
-            <div className="text-lg font-black tracking-tight text-white transition-transform
+            <div className="text-base font-black tracking-tight text-white transition-transform md:text-lg
               duration-300 hover:-translate-y-0.5">
               ENTRAMMA
             </div>
@@ -46,7 +48,7 @@ export function Footer() {
         </div>
 
         {/* Info */}
-        <div className="text-center text-sm md:text-left transition-transform duration-300 hover:-translate-y-0.5">
+        <div className="text-center text-xs leading-5 transition-transform duration-300 hover:-translate-y-0.5 md:text-left md:text-sm">
           Nylon transparente • Garantia 1 ano • Region Metropolitana y zonas cercanas
         </div>
 

@@ -16,7 +16,7 @@ export function Faq() {
             key={faq.question}
             className="
               overflow-hidden
-              rounded-2xl
+              rounded-xl
               border
               border-white/10
               bg-white/[0.04]
@@ -36,8 +36,8 @@ export function Faq() {
                 w-full
                 items-center
                 justify-between
-                px-4
-                py-3.5
+                px-3
+                py-2.5
                 text-sm
                 md:px-6
                 md:py-5
@@ -51,7 +51,8 @@ export function Faq() {
 
               <span
                 className={`
-                  text-xl
+                  text-lg
+                  md:text-xl
                   transition-transform
                   duration-300
                   ${isOpen ? 'rotate-45' : ''}
@@ -73,8 +74,8 @@ export function Faq() {
                 }
               `}
             >
-              <div className="border-t border-white/5 px-4 pb-4 pt-3 md:px-6 md:pb-5 md:pt-4">
-                <p className="text-sm leading-6 text-[var(--muted)] md:text-base md:leading-8">
+              <div className="border-t border-white/5 px-3 pb-3 pt-2.5 md:px-6 md:pb-5 md:pt-4">
+                <p className="text-[13px] leading-5 text-[var(--muted)] md:text-base md:leading-8">
                   {faq.answer}
                 </p>
               </div>

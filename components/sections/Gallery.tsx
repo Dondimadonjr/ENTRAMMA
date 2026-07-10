@@ -4,16 +4,16 @@ import { gallery } from '@/lib/site';
 
 export function Gallery() {
   return (
-    <section className="scroll-mt-20 border-y border-[var(--line)] bg-white/[0.03] py-9 md:py-[54px]" id="galeria">
+    <section className="scroll-mt-20 border-y border-[var(--line)] bg-white/[0.03] py-7 md:py-[54px]" id="galeria">
       <Container>
-        <div className="mb-4 md:mb-[18px]">
+        <div className="mb-3.5 md:mb-[18px]">
           <h2 className="mb-2 text-[clamp(24px,3vw,32px)] font-black tracking-normal">Galeria</h2>
           <p className="m-0 text-sm leading-6 text-[var(--muted)] md:text-base md:leading-[1.7]">
             Trabajos reales con nylon transparente, tensado firme y terminaciones cuidadas para distintos espacios.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-2.5 md:gap-3.5 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-2 md:gap-3.5 lg:grid-cols-4">
           {gallery.map((item) => (
             <a
               key={item.src}

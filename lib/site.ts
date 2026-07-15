@@ -6,7 +6,7 @@ export const business = {
   area: 'Region Metropolitana',
   phone: '+56 9 7208 6522',
   whatsapp: '56972086522',
-  email: 'mallasdeseguridad@gmail.com',
+  email: 'contacto@entramma.cl',
   hours: '9:00 a 18:00',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://mallasdeseguridad.cl',
   ogImage: '/img/imagen-1.jpg',

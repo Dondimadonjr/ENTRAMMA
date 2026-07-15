@@ -40,7 +40,7 @@ export function Hero() {
             <strong className="text-white">
               {' '}balcones, ventanas y terrazas
             </strong>
-            {' '}con respuesta rapida, materiales certificados, garantia y rectificacion en terreno antes de fabricar.
+            {' '}con respuesta rapida, materiales certificados, garantia y rectificación en terreno antes de fabricar.
           </p>
 
           {/* CTA */}

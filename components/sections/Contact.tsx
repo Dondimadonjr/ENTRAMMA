@@ -1,4 +1,4 @@
-import { ArrowUpRight, Mail, PhoneCall } from 'lucide-react';
+import { ArrowUpRight, Mail, PhoneCall, CalendarClock } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { Container } from '@/components/ui/Container';
@@ -113,13 +113,26 @@ export function Contact() {
 
               </div>
 
-              <div className="mt-3 rounded-xl border border-white/8 bg-white/[0.03] p-2.5 md:mt-6 md:rounded-2xl md:p-4">
-                <div className="text-xs text-[var(--muted)]">
-                  Horario
-                </div>
+              <div className="mt-3 rounded-xl border border-white/8 bg-white/[0.03] p-2.5 transition hover:bg-white/[0.05] md:mt-6 md:rounded-2xl md:p-4">
+                <div className="flex items-center gap-3">
 
-                <div className="mt-1 font-semibold">
-                  {business.hours}
+                  <div className="rounded-lg bg-amber-500/10 p-2.5 md:rounded-xl md:p-3">
+                    <CalendarClock
+                      size={18}
+                      className="text-amber-300"
+                    />
+                  </div>
+
+                  <div>
+                    <div className="text-xs text-[var(--muted)]">
+                      Horario
+                    </div>
+
+                    <div className="font-semibold">
+                      {business.hours}
+                    </div>
+                  </div>
+
                 </div>
               </div>
 

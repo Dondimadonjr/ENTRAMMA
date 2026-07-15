@@ -1,4 +1,4 @@
-import { Clock3, MapPin } from 'lucide-react';
+import { PhoneForwarded, Clock3, MapPin } from 'lucide-react';
 import { MobileNav } from '@/components/layout/MobileNav';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
@@ -67,8 +67,8 @@ export function Header() {
               md:gap-3
             "
           >
-            {/* Marca */}
-            <div className="text-[21px] font-black tracking-[-0.04em] text-white md:text-[28px]">
+            {/* Marca */} 
+            <div className="hidden text-[21px] font-black tracking-[-0.04em] text-white md:block md:text-[28px]">
               ENTRAMMA
             </div>
 
@@ -95,7 +95,7 @@ export function Header() {
               "
             >
               <Image
-                src="/img/favicon.png"
+                src="/img/logoPrincipal.png"
                 alt="ENTRAMMA"
                 fill
                 priority
@@ -173,7 +173,8 @@ export function Header() {
                   analyticsEvents.headerCta
                 )}
               >
-                Presupuesto →
+                 <PhoneForwarded size={18} />
+                 Contactar
               </Button>
             </div>
 

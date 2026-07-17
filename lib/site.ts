@@ -10,7 +10,7 @@ export const business = {
   hours: '9:00 a 18:00',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://mallasdeseguridad.cl',
   ogImage: '/img/imagen-1.jpg',
-  instagram: '@mallasdeseguridad'
+  instagram: 'entramma'
 };
 
 export const navItems = [

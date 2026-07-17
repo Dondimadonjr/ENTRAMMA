@@ -1,4 +1,4 @@
-import { ArrowUpRight, Mail, PhoneCall, CalendarClock } from 'lucide-react';
+import { ArrowUpRight, Mail, PhoneCall, Camera, CalendarClock } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { Container } from '@/components/ui/Container';
@@ -156,10 +156,25 @@ export function Contact() {
                 </Button>
 
               </div>
-
-              <p className="mt-4 text-center text-xs text-[var(--muted)] md:mt-5">
+              <a
+                            href={`https://instagram.com/${business.instagram.replace('@', '')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 flex items-center justify-center gap-1.5 text-xs text-[var(--muted)] transition hover:text-white md:mt-5"
+              >
+                <Camera size={16} aria-hidden="true" />
                 Instagram · {business.instagram}
-              </p>
+              </a>
+
+              <a
+                            href={`https://instagram.com/${business.instagram.replace('@', '')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 flex items-center justify-center gap-1.5 text-xs text-[var(--muted)] transition hover:text-white md:mt-5"
+              >
+                <Camera size={16} aria-hidden="true" />
+                Instagram · {business.instagram}
+              </a>
 
             </div>
           </Card>

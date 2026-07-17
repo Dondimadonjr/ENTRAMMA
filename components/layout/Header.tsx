@@ -17,7 +17,7 @@ export function Header() {
 
           <div className="flex items-center gap-2 transition hover:text-white">
             <MapPin size={12} className="md:h-3.5 md:w-3.5" />
-            <span className="truncate">Region Metropolitana y zonas cercanas</span>
+            <span className="truncate">Región Metropolitana y zonas cercanas</span>
           </div>
 
           <div className="hidden items-center gap-3 sm:flex">
@@ -118,9 +118,8 @@ export function Header() {
           {/* NAV */}
           <nav
             className="hidden items-center gap-1 md:flex"
-            aria-label="Navegacion principal"
+            aria-label="Navegación principal"
           >
-
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -156,28 +155,24 @@ export function Header() {
                     group-hover:w-[calc(100%-32px)]
                   "
                 />
-
               </a>
             ))}
 
             <div className="ml-4">
               <Button
                 href={whatsappUrl(
-                  'Hola, quiero solicitar un presupuesto estimado y coordinar visita tecnica.'
+                  'Hola, quiero solicitar un presupuesto estimado y coordinar una visita técnica.'
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="primary"
                 size="small"
-                {...analyticsAttrs(
-                  analyticsEvents.headerCta
-                )}
+                {...analyticsAttrs(analyticsEvents.headerCta)}
               >
-                 <PhoneForwarded size={18} />
-                 Contactar
+                <PhoneForwarded size={18} />
+                Contactar
               </Button>
             </div>
-
           </nav>
 
           <MobileNav />

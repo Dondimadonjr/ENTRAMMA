@@ -8,18 +8,18 @@ export function LocalBusinessJsonLd() {
     url: business.url,
     telephone: business.phone,
     email: business.email,
-    areaServed: ['Region Metropolitana', 'Localidades cercanas', 'Zonas costeras segun evaluacion'],
+    areaServed: ['Región Metropolitana', 'Localidades cercanas', 'Zonas costeras según evaluación'],
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Region Metropolitana',
-      addressRegion: 'Region Metropolitana',
+      addressLocality: 'Región Metropolitana',
+      addressRegion: 'Región Metropolitana',
       addressCountry: 'CL'
     },
     openingHours: 'Mo-Sa 09:00-18:00',
     priceRange: '$$',
     image: `${business.url}${business.ogImage}`,
     description:
-      'Instalacion profesional para balcones, ventanas, terrazas, escaleras, piscinas y otros espacios, con visita tecnica y presupuesto estimado.',
+      'Instalación profesional para balcones, ventanas, terrazas, escaleras, piscinas y otros espacios, con visita técnica y presupuesto estimado.',
     makesOffer: [
       'mallas de seguridad',
       'mallas para balcones',

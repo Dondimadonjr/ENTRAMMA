@@ -18,19 +18,15 @@ export function Contact() {
       <Container className="relative">
         {/* Header */}
         <div className="mb-4 max-w-2xl md:mb-10">
-          <span className="inline-flex rounded-full border border-white/10 bg-white/[0.04] px-2.5 py-1 text-[11px] text-blue-200 md:px-4 md:py-2 md:text-sm">
-            Contacto
-          </span>
-
-          <h2 className="mt-2.5 text-[clamp(26px,7vw,34px)] font-black leading-[1.05] md:mt-4 md:text-[clamp(26px,4vw,44px)]">
-            Solicita una estimacion y coordinemos la{' '}
+          <h2 className="mt-2.5 text-[clamp(26px,7vw,34px)] font-black leading-[1.05] md:mt-0.5 md:text-[clamp(26px,4vw,44px)]">
+            Solicita una estimación y coordinemos la{' '}
             <span className="bg-[linear-gradient(90deg,#93c5fd,#86efac)] bg-clip-text text-transparent">
-              visita tecnica
+              visita técnica
             </span>
           </h2>
 
           <p className="mt-2.5 max-w-[62ch] text-[13px] leading-5 text-[var(--muted)] md:mt-4 md:text-base md:leading-[1.8]">
-            Cuentanos lo esencial para preparar un presupuesto referencial. Luego verificamos medidas y condiciones en
+            Cuéntanos lo esencial para preparar un presupuesto referencial. Luego verificamos medidas y condiciones en
             terreno antes de confirmar la propuesta final.
           </p>
         </div>
@@ -60,7 +56,7 @@ export function Contact() {
               </h3>
 
               <p className="mt-1.5 text-[13px] text-[var(--muted)] md:mt-2 md:text-sm">
-                Respuesta rapida durante horario laboral.
+                Respuesta rápida durante el horario laboral.
               </p>
 
               <div className="mt-4 space-y-2.5 md:mt-8 md:space-y-4">
@@ -140,7 +136,7 @@ export function Contact() {
 
                 <Button
                   href={whatsappUrl(
-                    'Hola, quiero solicitar un presupuesto estimado y agendar una visita tecnica.'
+                    'Hola, quiero solicitar un presupuesto estimado y agendar una visita técnica.'
                   )}
                   target="_blank"
                   rel="noopener noreferrer"

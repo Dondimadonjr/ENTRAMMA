@@ -12,7 +12,7 @@ export function Services() {
         <div className="mb-3.5 md:mb-[18px]">
           <h2 className="mb-2 text-[clamp(24px,3vw,32px)] font-black tracking-normal">Servicios</h2>
           <p className="m-0 text-sm leading-6 text-[var(--muted)] md:text-base md:leading-[1.7]">
-            Instalaciones a medida para reducir riesgos sin alterar la vista ni la estetica del espacio.
+            Instalaciones a medida para reducir riesgos sin alterar la vista ni la estética del espacio.
           </p>
         </div>
 

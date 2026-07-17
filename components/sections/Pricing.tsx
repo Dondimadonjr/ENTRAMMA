@@ -11,9 +11,9 @@ export function Pricing() {
     <section className="py-7 md:py-[54px]" id="precios">
       <Container>
         <div className="mb-3.5 md:mb-[18px]">
-          <h2 className="mb-2 text-[clamp(24px,3vw,32px)] font-black tracking-normal">Valores referenciales & FAQ</h2>
+          <h2 className="mb-2 text-[clamp(24px,3vw,32px)] font-black tracking-normal">Valores referenciales y FAQ</h2>
           <p className="m-0 text-sm leading-6 text-[var(--muted)] md:text-base md:leading-[1.7]">
-            Entregamos una estimacion inicial clara. El valor final se confirma luego de revisar medidas, accesos y condiciones reales.
+            Entregamos una estimación inicial clara. El valor final se confirma luego de revisar medidas, accesos y condiciones reales.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export function Pricing() {
               ))}
             </div>
             <p className="mb-3 text-[13px] leading-5 text-[var(--muted)] md:mb-5 md:text-base md:leading-6">
-              *El valor final depende de medidas, tipo de instalacion y condiciones del lugar. La visita tecnica permite
+              *El valor final depende de medidas, tipo de instalación y condiciones del lugar. La visita técnica permite
               rectificar el presupuesto antes de fabricar.
             </p>
             <div className="mb-3 rounded-xl border border-green-300/20 bg-green-400/10 p-2.5 md:mb-5 md:rounded-2xl md:p-3">
@@ -49,7 +49,7 @@ export function Pricing() {
               variant="primary"
               size="full"
             >
-              Solicitar estimacion por WhatsApp
+              Solicitar estimación por WhatsApp
             </Button>
           </Card>
           <Faq />

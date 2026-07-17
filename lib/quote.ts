@@ -3,8 +3,8 @@ import { RefreshCw, ShieldPlus } from 'lucide-react';
 export const quotePricing = {
   installation: {
     key: 'installation',
-    label: 'Nueva instalacion',
-    description: 'Precio calculado como instalacion desde cero.',
+    label: 'Nueva instalación',
+    description: 'Precio calculado como instalación desde cero.',
     basePricePerM2: 5000
   },
   replacement: {
@@ -18,7 +18,7 @@ export const quotePricing = {
 export const serviceTypes = [
   {
     id: 'installation',
-    title: 'Nueva instalacion',
+    title: 'Nueva instalación',
     description: 'Instalaremos una malla donde actualmente no existe.',
     pricingKey: 'installation',
     icon: ShieldPlus
@@ -52,7 +52,7 @@ export function getPricingSummary(serviceTypeId?: string) {
   const pricing = getServicePricing(serviceTypeId);
 
   if (!pricing) {
-    return 'Se definira luego de seleccionar el servicio.';
+    return 'Se definirá luego de seleccionar el servicio.';
   }
 
   return `${pricing.label}: desde $${pricing.basePricePerM2.toLocaleString('es-CL')} CLP / m2. ${pricing.description}`;

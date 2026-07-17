@@ -43,7 +43,7 @@ export function Gallery() {
         <div className="mb-3.5 md:mb-6">
           <h2 className="mb-2 text-[clamp(24px,3vw,32px)] font-black tracking-normal">Galería</h2>
           <p className="m-0 text-sm leading-6 text-[var(--muted)] md:text-base md:leading-[1.7]">
-            Trabajos reales con malla de monofilamento, tensado firme y terminaciones cuidadas para distintos espacios.
+            Trabajos reales con malla monofilamento, tensado firme y terminaciones cuidadas para distintos espacios.
           </p>
         </div>
 

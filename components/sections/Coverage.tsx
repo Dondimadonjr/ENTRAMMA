@@ -2,9 +2,9 @@ import { Card } from '@/components/ui/Card';
 import { Container } from '@/components/ui/Container';
 
 const items = [
-  { title: 'Region Metropolitana', description: 'Coordinamos instalaciones en comunas urbanas y residenciales con visita tecnica.' },
-  { title: 'Zonas cercanas', description: 'Evaluamos proyectos en localidades proximas cuando el alcance de la instalacion lo requiere.' },
-  { title: 'Evaluacion en terreno', description: 'Rectificamos medidas, accesos y detalles constructivos antes de fabricar.' }
+  { title: 'Región Metropolitana', description: 'Coordinamos instalaciones en comunas urbanas y residenciales con visita técnica.' },
+  { title: 'Zonas cercanas', description: 'Evaluamos proyectos en localidades cercanas cuando el alcance de la instalación lo requiere.' },
+  { title: 'Evaluación en terreno', description: 'Rectificamos medidas, accesos y detalles constructivos antes de fabricar.' }
 ];
 
 export function Coverage() {
@@ -14,8 +14,8 @@ export function Coverage() {
         <div className="mb-3.5 md:mb-[18px]">
           <h2 className="mb-2 text-[clamp(24px,3vw,32px)] font-black tracking-normal">Cobertura</h2>
           <p className="m-0 text-sm leading-6 text-[var(--muted)] md:text-base md:leading-[1.7]">
-            Realizamos instalaciones en toda la Region Metropolitana y tambien desarrollamos proyectos en localidades
-            cercanas y zonas costeras segun evaluacion.
+            Realizamos instalaciones en toda la Región Metropolitana y también desarrollamos proyectos en localidades
+            cercanas y zonas costeras según evaluación.
           </p>
         </div>
 

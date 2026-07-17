@@ -4,23 +4,23 @@ import { business } from '@/lib/site';
 export const siteMetadata: Metadata = {
   metadataBase: new URL(business.url),
 
-  title: 'Entramma | Instalacion profesional de seguridad en altura',
+  title: 'Entramma | Instalación profesional de seguridad en altura',
 
   description:
-    'Instalacion profesional para balcones, ventanas, terrazas, escaleras y piscinas. Presupuesto estimado, visita tecnica, materiales certificados y garantia.',
+    'Instalación profesional para balcones, ventanas, terrazas, escaleras y piscinas. Presupuesto estimado, visita técnica, materiales certificados y garantía.',
 
   keywords: [
     'mallas de seguridad',
     'mallas para balcones',
     'mallas para ventanas',
-    'instalacion de mallas',
+    'instalación de mallas',
     'seguridad en altura',
-    'Region Metropolitana'
+    'Región Metropolitana'
   ],
 
   icons: {
-    icon: 'img/favicon.png',
-    shortcut: 'img/favicon.png',
+    icon: 'img/favicon1.png',
+    shortcut: 'img/favicon1.png',
     apple: 'img/apple-touch-icon.png'
   },
 
@@ -29,9 +29,9 @@ export const siteMetadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Entramma | Instalacion profesional de seguridad en altura',
+    title: 'Entramma | Instalación profesional de seguridad en altura',
     description:
-      'Presupuesto estimado, visita tecnica y materiales certificados para balcones, ventanas, terrazas y otros espacios.',
+      'Presupuesto estimado, visita técnica y materiales certificados para balcones, ventanas, terrazas y otros espacios.',
     url: business.url,
     siteName: business.name,
     locale: 'es_CL',
@@ -41,7 +41,7 @@ export const siteMetadata: Metadata = {
         url: business.ogImage,
         width: 1024,
         height: 680,
-        alt: 'Instalacion profesional en balcon con nylon transparente'
+        alt: 'Instalación profesional en balcón con malla transparente'
       }
     ]
   },
@@ -50,7 +50,7 @@ export const siteMetadata: Metadata = {
     card: 'summary_large_image',
     title: 'Entramma | Seguridad en altura',
     description:
-      'Instalacion profesional con visita tecnica, garantia y cobertura en la Region Metropolitana y zonas cercanas.',
+      'Instalación profesional con visita técnica, garantía y cobertura en la Región Metropolitana y zonas cercanas.',
     images: [business.ogImage]
   },
 

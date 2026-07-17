@@ -16,7 +16,7 @@ export function MobileNav() {
       <button
         type="button"
         className="grid h-9 w-9 place-items-center rounded-xl border border-[var(--line)] bg-white/[0.06] transition duration-200 active:scale-95 hover:-translate-y-0.5 hover:border-white/20 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-blue-500/20"
-        aria-label={menu.isOpen ? 'Cerrar menu' : 'Abrir menu'}
+        aria-label={menu.isOpen ? 'Cerrar menú' : 'Abrir menú'}
         aria-expanded={menu.isOpen}
         aria-controls="mobile-nav"
         onClick={menu.toggle}
@@ -30,7 +30,7 @@ export function MobileNav() {
           menu.isOpen && 'flex'
         )}
         id="mobile-nav"
-        aria-label="Navegacion movil"
+        aria-label="Navegación móvil"
       >
         {navItems.map((item) => (
           <a
@@ -43,7 +43,7 @@ export function MobileNav() {
           </a>
         ))}
         <Button
-          href={whatsappUrl('Hola, quiero solicitar un presupuesto estimado y coordinar visita tecnica.')}
+          href={whatsappUrl('Hola, quiero solicitar un presupuesto estimado y coordinar una visita técnica.')}
           target="_blank"
           rel="noopener noreferrer"
           variant="primary"
